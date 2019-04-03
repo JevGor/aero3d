@@ -127,8 +127,8 @@
   margin-right: 20px;
 }
 
-.socials-icon:hover {
-  fill: #4A4C6A;
+.socials__link:hover  {
+  color: #4A4C6A;
 }
 
 .content-right {
@@ -139,19 +139,19 @@
 }
 
 .drone-illust {
-  height: 210px;
-  width: 480px;
+  height: 12%;
+  width: 45%;
   position: absolute;
-  left: 55%;
-  top: 15%;
+  right: 15%;
+  top: 5%;
 }
 
 .flat-illust {
-  height: 320px;
-  width: 380px;
+  height: 20%;
+  width: 30%;
   position: absolute;
   right: 5%;
-  bottom: 10%;
+  top: 15%;
 }
 
 /* Section about */
@@ -168,13 +168,18 @@
   margin-bottom: 2%;
 }
 
-.about-txt {
-  padding-top: 3%;
-  padding-bottom: 3%;
+.about-txt__bg {
+  
   display: flex;
   justify-content: center;
   width: 100%;
   background: #EEE1E8 linear-gradient(to left, #ffffff, #EEE1E8);
+}
+
+.about-txt{ 
+  padding: 3%;
+  text-align: center; 
+  width: 80%;
 }
 
 .demo {
@@ -183,20 +188,8 @@
   min-height: 550px;
 }
 
-.tour-winddow {
-  width: 100%;
-  flex: 1;
-}
-
-.aero-window {
-  width: 100%;
-  flex: 1;
-}
-
 iframe {
   width: 100%;
-  display: flex;
-  height: 100%
 }
 
 /* Section contact */
@@ -263,7 +256,91 @@ iframe {
 
 /* Adaptive */
 
+@media (max-width: 768px) {
+  .nav {
+    margin-right: 0;
+  }
 
+  .logo__img {
+    margin-left: 25%;
+  }
+
+  .hero__txt{
+    justify-content: space-around;
+    height: 20%;
+    margin-top: -15%;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .hero-desc {
+    font-size: 14px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  
+  .drone-illust {
+    height: 10%;
+    width: 45%;
+    right: 10%;
+    top: 5%;
+  }
+
+  .flat-illust {
+    height: 15%;
+    width: 40%;
+    right: 10%;
+    top: 17%;
+  }
+
+  .demo {
+    flex-direction: column;
+  }
+
+  .iframe {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    display: none;
+  }
+
+  .drone-illust {
+    height: 5%;
+    width: 55%;
+    right: 5%;
+    top: 5%;
+  }
+
+  .flat-illust {
+    height: 15%;
+    width: 45%;
+    right: 5%;
+    top: 15%;
+  }
+
+  .hero__container{
+    justify-content: space-evenly;
+  }
+
+  .hero__txt{
+    justify-content: space-around;
+    height: 20%;
+    margin-top: -15%;
+  }
+  
+  .contacts-list {
+    width: 90%;
+    text-align: center;
+  }
+  .contacts-list:last-child{
+    padding-left: 5%
+  }
+}
 
 /* Fonts */
 
