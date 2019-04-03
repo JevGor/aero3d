@@ -346,24 +346,11 @@ iframe {
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("fonts/ubuntu-b-webfont.woff2") format("woff2");
+  src: url("https://fonts.googleapis.com/css?family=Ubuntu") format("woff2");
   font-weight: 900;
   font-style: bold;
 }
 
-@font-face {
-  font-family: 'Ubuntu';
-  src: url("fonts/ubuntu-light-webfont.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url("fonts/ubuntu-medium-webfont.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'Cabin';
