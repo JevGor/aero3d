@@ -4,12 +4,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: url("img/drone-bg.png") no-repeat center center;
-  background-size: cover;
+  background: url("img/bg-hero.svg") no-repeat center;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
 
 .header {
@@ -19,9 +18,15 @@
   justify-content: space-around;
 }
 
+.header:last-child {
+  justify-content: flex-end;
+}
+
 .logo__img {
-  height: 100%;
-  width: 100%;
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 125px;
+  height: 125px;
 }
 
 
@@ -32,30 +37,78 @@
 
 .nav__item {
   margin-left: 25px;
+  font-size: 18px;
+  font-family: 'Ubuntu';
+}
+.nav__item:hover{
+  text-decoration: underline;
 }
 
 .nav__link {
   text-decoration: none;
 }
 
+.lang-list {
+  list-style: none;
+  display: flex;
+}
+
+.lang-item {
+  text-decoration: none;
+  margin-right: 30px;
+  color: #444444;
+}
+.lang-item:hover{
+  text-decoration: underline;
+}
 
 .hero__container {
   height: 90%;
   display: flex;
-  margin-left: 250px;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
 }
 
 .hero__txt {
+  width: 45%;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  margin-left: 160px;
 }
 
+.section-title {
+  text-transform: uppercase;
+  font-family: 'Ubuntu';
+  /* line-height: 60px; */
+  font-size: 42px;
+}
 
+.socials {
+  margin-left: 160px;
+}
 
-/* Section whatWeDo */
-.whatWeDo-txt {
+.socials-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  list-style: none;
+  padding: 0;
+}
+
+.socials-icon{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+.socials-icon:hover {
+  fill: #4A4C6A;
+}
+
+/* Section about */
+.about-txt {
   min-height: 55px;
   width: 100%;
   display: flex;
@@ -64,49 +117,47 @@
   align-items: center;
 }
 
-.whatWeDo-container {
-}
-
-.after {
+.about__txt {
   display: flex;
   justify-content: flex-start;
   width: 100%;
   background: #EEE1E8 linear-gradient(to left, #ffffff, #EEE1E8);
 }
 
-.after-text {
-  margin-left: 50px;
-}
-
-.after-effects {
-  height: 350px;
-  width: 100%;
-}
-
-.before {
+.demo {
   display: flex;
-  justify-content: flex-end;
   width: 100%;
-  background: #EEE1E8 linear-gradient(to right, #ffffff, #EEE1E8);
+  min-height: 550px;
 }
 
-.before-text {
-  margin-right: 50px;
+.tour-winddow {
+  width: 100%;
+  flex: 1;
 }
 
-.photo-slider {
-  height: 160px;
+.aero-window {
   width: 100%;
+  flex: 1;
+}
+
+iframe {
+  width: 100%;
+  display: flex;
+  height: 100%
 }
 
 /* Section contact */
+
 .contacts-container {
   background: url("img/contacts-bg.png") no-repeat center center;
-  /* min-height: 580px; */
 }
 
 .pricing-container {
   width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .pricing__header {
@@ -114,18 +165,18 @@
 }
 
 .pricing__text {
-  margin-top: 45px;
+  width: 70%;
+  margin-top: 35px;
+  text-align: center;
 }
 
-.contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-}
 
 .contacts-header {
-  margin-top: 80px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Ubuntu';
 }
 
 .contacts-list {
@@ -135,39 +186,60 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  padding: 0 0;
+  align-items: center;
 }
 
+.contacts-item {
+  font-size: 24px;
+  font-family: 'Cabin';
+}
+
+.footer {
+  background: #4A4C6A;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.rigths {
+  color: #ffffff;
+  font-size: 16px;
+}
 /* Adaptive */
+
+
 
 /* Fonts */
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu-b-webfont.woff2") format("woff2");
+  src: url("fonts/ubuntu-b-webfont.woff2") format("woff2");
   font-weight: 900;
-  font-style: normal;
+  font-style: bold;
 }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu-light-webfont.woff2") format("woff2");
+  src: url("fonts/ubuntu-light-webfont.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu-medium-webfont.woff2") format("woff2");
+  src: url("fonts/ubuntu-medium-webfont.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu-regular-webfont.woff2") format("woff2");
-  font-weight: 500;
+  font-family: 'Cabin';
+  src: url("https://fonts.googleapis.com/css?family=Cabin") format("woff2");
+  font-weight: 400;
   font-style: normal;
+  color: #444444;
 }
 
 
@@ -185,8 +257,8 @@
 }
 
 .container {
-  width: 940px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0 0 0 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -208,7 +280,6 @@
 
 .section {
   height: 100vh;
-  min-width: 940px;
   min-height: 650px;
 }
 
@@ -263,18 +334,32 @@ section {
    */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
   color: #5377A0;
+  margin-bottom: 0;
 }
 
 h2 {
   color: #5377A0;
+  margin-bottom: 0;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 60px;
+  font-size: 36px;
 }
 
 h3 {
   color: #5377A0;
+  margin-bottom: 0;
+}
 
+p {
+  font-family: 'Cabin';
+  font-style: normal;
+  /* font-weight: regular, semibold; */
+  line-height: 100%;
+  font-size: 24px;
+  color: #444444;
 }
 
 /* Grouping content
